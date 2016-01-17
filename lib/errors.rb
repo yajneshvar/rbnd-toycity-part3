@@ -1,0 +1,4 @@
+
+class DuplicateProductError < StandardError
+
+end

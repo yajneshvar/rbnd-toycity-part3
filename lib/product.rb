@@ -14,7 +14,6 @@ class Product
         self.stock > 0
     end
 
-
     def self.all
         @@products
     end
@@ -26,7 +25,9 @@ class Product
 
     def self.find_by_title(name)
         item  = @@products.select{|product| product.title == name}
-        item.pop
+        if(!item.nil?)
+            item.pop
+        end
     end
 
 

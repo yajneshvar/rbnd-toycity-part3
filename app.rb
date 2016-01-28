@@ -67,12 +67,14 @@ require_relative "lib/transaction"
 
 
 # NEW FEATURE
+puts "New Features"
 puts nanoblock.stock #should return 11
 walter.return(nanoblock)
 puts nanoblock.stock #should return 12
-puts Transaction.all.count
+puts Transaction.all.count #should return 3
 
 date = Time.new(1992,8,30)
 yaj = Customer.new(name: "yaj", date_of_birth: date, postal_code: "M4V")
 puts yaj.name
+puts yaj.postal_code
 puts yaj.get_date

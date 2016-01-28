@@ -62,5 +62,17 @@ require_relative "lib/transaction"
  transaction2 = Transaction.find(2)
  puts transaction2.product == nanoblock # Should return true
 
-# walter.purchase(firehouse)
-# Should return OutOfStockError: 'LEGO Firehouse Headquarter' is out of stock.
+#walter.purchase(firehouse)
+#Should return OutOfStockError: 'LEGO Firehouse Headquarter' is out of stock.
+
+
+# NEW FEATURE
+puts nanoblock.stock #should return 11
+walter.return(nanoblock)
+puts nanoblock.stock #should return 12
+puts Transaction.all.count
+
+date = Time.new(1992,8,30)
+yaj = Customer.new(name: "yaj", date_of_birth: date, postal_code: "M4V")
+puts yaj.name
+puts yaj.get_date

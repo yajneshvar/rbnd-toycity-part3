@@ -8,6 +8,15 @@ class Product
         @stock = options[:stock]
         @price = options[:price]
         add_to_products
+        puts self
+    end
+
+    def add_stock(quantity)
+      @stock += quantity
+    end
+
+    def reduce_stock(quantity)
+      @stock -= quantity
     end
 
     def in_stock?
@@ -17,7 +26,7 @@ class Product
     def self.all
         @@products
     end
-    
+
     def self.in_stock
         @@products.select {|product| product.stock > 0 }
     end
@@ -31,14 +40,15 @@ class Product
     end
 
 
-    private 
+    private
 
     def add_to_products
         @@products.each do |product|
             if(product.title == self.title)
-                raise DuplicateProductError, "Product #{product.title} already exists" 
+                raise DuplicateProductError, "Product #{product.title} already exists"
             end
         end
         @@products << self
     end
+
 end

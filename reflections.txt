@@ -1,0 +1,10 @@
+
+How long did you spend working on this project?
+I spent about 15 hours on this project
+What was the most rewarding challenge you conquered?
+Reducing or increasing the stock whenever a transaction happened. Was stuck with the idea of pass by reference in ruby and how most object returned are pointers to the same object with exception to functions which create new objects.
+What two additional features did you build? Why?
+Added the functionality to return a purchase. Added this feature because I believe being able to return a product you don't like is important
+Added the functionality to add date of birth and postal code to customer information. There are just too many people with the same name.
+Where do you still have room to grow?
+I have a lot to improve in my choice of algorithms to solve a problem. I also have a lot of room in expanding my creativity. I should also improve my code presentation.

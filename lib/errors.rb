@@ -11,3 +11,7 @@ end
 class OutOfStockError < StandardError
 
 end
+
+class NonExistentProductError < StandardError
+
+end
